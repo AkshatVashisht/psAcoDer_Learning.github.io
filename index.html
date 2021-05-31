@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>psAcoDer Website</title>
+    <style>
+        @media (max-width: 992px) {
+            .margin {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">psAcoDer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Technology
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/" target="_blank">Web
+                                    Development</a></li>
+                            <li><a class="dropdown-item" href="https://developer.android.com/guide"
+                                    target="_blank">Android Development</a></li>
+                            <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/c-plus-plus/"
+                                    target="_blank">C++ </a></li>
+                            <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/java/"
+                                    target="_blank">Java</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/js/default.asp"
+                                    target="_blank">JavaScript</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.geeksforgeeks.org/python-programming-language/"
+                                    target="_blank">Python</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://en.wikipedia.org/wiki/Programming_language#:~:text=A%20programming%20language%20is%20a,consist%20of%20instructions%20for%20computers."
+                                    target="_blank">Programming Languages</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light margin2" type="submit">Search</button>
+                </form>
+                <div class="mx-1">
+                    <button type="button" class="btn btn-danger margin" data-bs-toggle="modal"
+                        data-bs-target="#signinModal">Login</button>
+                    <button type="button" class="btn btn-danger margin" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Signin Modal -->
+    <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signinModalLabel">Login to psAcoDer Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">SignUp to psAcoDer Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                            <div class="invalid-feedback">
+                                Your username is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="country" class="form-label">Country</label>
+                        <select class="form-select" id="country" required="">
+                            <option value="">Choose...</option>
+                            <option>India</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="state" class="form-label">State</label>
+                        <select class="form-select" id="state" required="">
+                            <option value="">Choose...</option>
+                            <option>Delhi</option>
+                            <option value="">Uttar Pradesh</option>
+                            <option value="">Rajasthan</option>
+                            <option value="">Uttrakhand</option>
+                            <option value="">Punjab</option>
+                            <option value="">Bihar</option>
+                            <option value="">Haryana</option>
+                            <option value="">Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            I agrees to all the terms and conditions.
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit</button>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Section 2 Carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="c9.jpg" class="d-block w-100 " width="1400" height="675" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to psAcoDer</h5>
+                    <p style="color:black;"><strong>Contains all information of various programming
+                            languages</strong>
+                    </p>
+                    <button type="button" class="btn btn-primary">Artificial Intelligence</button>
+                    <button type="button" class="btn btn-success">Web Development</button>
+                    <button type="button" class="btn btn-warning">Machine Learning
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="c8.jpg" class="d-block w-100" width="1400" height="675" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5>Best Coding Website</h5>
+                    <p><strong>Technology, Development, Trending Technologies</strong></p>
+                    <button type="button" class="btn btn-primary">Artificial Intelligence</button>
+                    <button type="button" class="btn btn-success">Web Development</button>
+                    <button type="button" class="btn btn-warning">Machine Learning
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="c5.jpg" class="d-block w-100" width="1400" height=" 675" alt="...">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h5>Awards Winning Information</h5>
+                    <p><strong>Technology, Programming Languages, Artificial Intelligence, Machine Learning</strong>
+                    </p>
+                    <button type="button" class="btn btn-primary">Artificial Intelligence</button>
+                    <button type="button" class="btn btn-success">Web Development</button>
+                    <button type="button" class="btn btn-warning">Machine Learning
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Cards Bootstrap-->
+
+    <div class="container my-5">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Details</strong>
+                        <h3 class="mb-0">Web Development</h3>
+                        <div class="mb-1 text-muted">30 May</div>
+                        <p class="card-text mb-auto">Technologies used in web develpoments are HTML, CSS, JS,
+                            NodeJS,
+                            PHP, MySql, Bootstrap, XML, AJAX, jQuery etc.</p>
+                        <a href="https://www.w3schools.com/" target="_blank" class="stretched-link">Continue
+                            reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thumb1.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Details</strong>
+                        <h3 class="mb-0">C++</h3>
+                        <div class="mb-1 text-muted">21 May</div>
+                        <p class="mb-auto">C++ is a general purpose programming language and widely used now a days
+                            for
+                            competitive programming. It has
+                            object-oriented features.</p>
+                        <a href="https://www.geeksforgeeks.org/c-plus-plus/" target="_blank"
+                            class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thumb2.png" class="bd-placeholder-img" width="200" height="250" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Details</strong>
+                        <h3 class="mb-0">JAVA</h3>
+                        <div class="mb-1 text-muted">23 May</div>
+                        <p class="card-text mb-auto">Java is one of the most popular and widely used programming
+                            language.
+                            Java has been one of the most popular programming language for many years</p>
+                        <a href="https://www.geeksforgeeks.org/java/" target="_blank" class="stretched-link">Continue
+                            reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thumb3.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Details</strong>
+                        <h3 class="mb-0">Artificial Intelligence</h3>
+                        <div class="mb-1 text-muted">12 May</div>
+                        <p class="mb-auto">Artificial intelligence (AI) refers to the simulation of human
+                            intelligence
+                            in machines that are programmed to think
+                            like humans and mimic their actions.</p>
+                        <a href="https://www.investopedia.com/terms/a/artificial-intelligence-ai.asp#:~:text=Artificial%20intelligence%20(AI)%20refers%20to,as%20learning%20and%20problem%2Dsolving."
+                            target="_blank" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thumb4.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Details</strong>
+                        <h3 class="mb-0">Python</h3>
+                        <div class="mb-1 text-muted">16 May</div>
+                        <p class="card-text mb-auto">Python is a high-level
+                            programming language. Python is being used in web development, Machine
+                            Learning applications in
+                            Software Industry.</p>
+                        <a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank"
+                            class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thumb5.png" class="bd-placeholder-img" width="200" height="250" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Details</strong>
+                        <h3 class="mb-0">JavaScript</h3>
+                        <div class="mb-1 text-muted">28 May</div>
+                        <p class="mb-auto">JavaScript is the world's most popular programming language.
+                            JavaScript is the programming language of the Web. JavaScript is easy to learn.
+                        </p>
+                        <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                            class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="thumb6.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!----footer----->
+
+    <footer class="container">
+        <hr>
+        <p style="text-align: center;"><a href="#">Back to top</a></p>
+        <p style="text-align: center;">© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>
+        </p>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
